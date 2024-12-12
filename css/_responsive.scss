@@ -1,23 +1,121 @@
-@media only screen and (max-width: 1400px) {
-  .container {
-    max-width: calc(100% - 112px);
-  }
-}
-
 @media only screen and (max-width: 1200px) {
   .container {
-    max-width: calc(100% - 144px);
+    max-width: calc(100% - 20px);
+  }
+
+  .guardians {
+    padding: 52px 0;
+
+    &_right {
+      display: none;
+    }
+
+    &_left {
+      max-width: 100%;
+
+      p {
+        margin-bottom: 48px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        transform: scale(1.1);
+      }
+
+      ul {
+        margin-top: 48px;
+
+        span {
+          font-size: 18px;
+          line-height: 20px;
+        }
+
+        li {
+          padding: 20px 0;
+        }
+
+        a {
+          font-size: 14px;
+          line-height: 16.8px;
+        }
+      }
+    }
   }
 }
 
-@media only screen and (max-width: 993px) {
-  .container {
-    max-width: calc(100% - 64px);
+@media only screen and (max-width: 768px) {
+  .home {
+    padding: 0;
+    background-image: none;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    .container {
+      max-width: 100%;
+    }
+
+    h6 {
+      color: $color-dark;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+
+    p {
+      color: $color-dark;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    &_in {
+      max-width: 100%;
+      padding: 28px 20px 52px 20px;
+      background: $color-light;
+    }
+  }
+
+  .tabs {
+    &_head {
+      h6 {
+        color: $color-dark;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 26px;
+      }
+
+      button {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        padding: 15px 20px;
+      }
+    }
+
+    &_btns {
+      gap: 8px;
+    }
   }
 }
 
-@media only screen and (max-width: 993px) {
-  .container {
-    max-width: calc(100% - 32px);
+@media only screen and (max-width: 576px) {
+  .guardians {
+    &_left {
+      p {
+        margin-bottom: 28px;
+      }
+
+      ul {
+        margin-top: 28px;
+      }
+    }
   }
 }

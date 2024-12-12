@@ -42,6 +42,7 @@ html {
 }
 
 body {
+  background-color: #F3EBE1;
   font-family: "NT Somic", sans-serif;
   font-style: normal;
 }
@@ -81,6 +82,9 @@ address {
   position: relative;
   padding: 220px 0;
 }
+.home img {
+  display: none;
+}
 .home::before {
   content: "";
   position: absolute;
@@ -89,7 +93,7 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(76, 36, 10, 0) 0%, rgba(76, 36, 10, 0.7) 100%);
+  background: linear-gradient(to left, rgba(76, 36, 10, 0) 0%, rgba(76, 36, 10, 0.7) 100%);
 }
 .home_in {
   max-width: 560px;
@@ -110,23 +114,196 @@ address {
   color: #F3EBE1;
 }
 
-@media only screen and (max-width: 1400px) {
-  .container {
-    max-width: calc(100% - 112px);
-  }
+.tabs {
+  padding: 120px 0 60px;
 }
+.tabs_head h6 {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #4C240A;
+  margin-bottom: 28px;
+}
+.tabs_head button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #4C240A;
+  padding: 13px 30px;
+  border-radius: 30px;
+  border: 1px solid #4C240A;
+}
+.tabs_head button.active {
+  background-color: #4C240A;
+  color: #F3EBE1;
+}
+.tabs_btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.guardians {
+  padding: 60px 0 120px 0;
+}
+.guardians .container {
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+  position: relative;
+}
+.guardians_right {
+  position: absolute;
+  right: -120px;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+}
+.guardians_right img {
+  max-width: 600px;
+  height: 100%;
+}
+.guardians_left {
+  max-width: 660px;
+}
+.guardians_left img {
+  display: none;
+}
+.guardians h6 {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #4C240A;
+  margin-bottom: 28px;
+}
+.guardians p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #4C240A;
+}
+.guardians ul {
+  margin-top: 40px;
+}
+.guardians ul li {
+  border-bottom: 1px solid #D9C8BB;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.guardians ul li:first-child {
+  border-top: 1px solid #D9C8BB;
+}
+.guardians ul span {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #4C240A;
+}
+.guardians ul a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #9F8775;
+}
+
 @media only screen and (max-width: 1200px) {
   .container {
-    max-width: calc(100% - 144px);
+    max-width: calc(100% - 20px);
+  }
+  .guardians {
+    padding: 52px 0;
+  }
+  .guardians_right {
+    display: none;
+  }
+  .guardians_left {
+    max-width: 100%;
+  }
+  .guardians_left p {
+    margin-bottom: 48px;
+  }
+  .guardians_left img {
+    display: block;
+    width: 100%;
+    transform: scale(1.1);
+  }
+  .guardians_left ul {
+    margin-top: 48px;
+  }
+  .guardians_left ul span {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .guardians_left ul li {
+    padding: 20px 0;
+  }
+  .guardians_left ul a {
+    font-size: 14px;
+    line-height: 16.8px;
   }
 }
-@media only screen and (max-width: 993px) {
-  .container {
-    max-width: calc(100% - 64px);
+@media only screen and (max-width: 768px) {
+  .home {
+    padding: 0;
+    background-image: none;
+  }
+  .home img {
+    width: 100%;
+    display: block;
+  }
+  .home::before {
+    display: none;
+  }
+  .home .container {
+    max-width: 100%;
+  }
+  .home h6 {
+    color: #4C240A;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+  .home p {
+    color: #4C240A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .home_in {
+    max-width: 100%;
+    padding: 28px 20px 52px 20px;
+    background: #F3EBE1;
+  }
+  .tabs_head h6 {
+    color: #4C240A;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+  .tabs_head button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 15px 20px;
+  }
+  .tabs_btns {
+    gap: 8px;
   }
 }
-@media only screen and (max-width: 993px) {
-  .container {
-    max-width: calc(100% - 32px);
+@media only screen and (max-width: 576px) {
+  .guardians_left p {
+    margin-bottom: 28px;
+  }
+  .guardians_left ul {
+    margin-top: 28px;
   }
 }/*# sourceMappingURL=style.css.map */
