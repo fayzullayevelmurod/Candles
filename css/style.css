@@ -228,6 +228,12 @@ address {
   .guardians_left {
     max-width: 100%;
   }
+  .guardians_left h6 {
+    color: #4C240A;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+  }
   .guardians_left p {
     margin-bottom: 48px;
   }

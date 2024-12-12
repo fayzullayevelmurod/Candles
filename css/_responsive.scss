@@ -13,6 +13,13 @@
     &_left {
       max-width: 100%;
 
+      h6 {
+        color: $color-dark;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 26px;
+      }
+
       p {
         margin-bottom: 48px;
       }
