@@ -1,141 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candles</title>
-    <!-- Swiper css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Swiper css -->
-    <!-- normalize -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <!-- normalize -->
-    <!-- favicon -->
-    <link rel="icon" href="">
-    <!-- favicon -->
-    <!-- css link -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- css link -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candles</title>
+  <!-- Swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper css -->
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- normalize -->
+  <!-- favicon -->
+  <link rel="icon" href="">
+  <!-- favicon -->
+  <!-- css link -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- css link -->
 </head>
+
 <body>
-    <div class="wrapper">
+  <div class="wrapper">
 
-        <!-- main -->
-        <main>
-            <!-- home -->
-            <section class="home">
-                <img src="./images/home_media.png" alt="">
-                <div class="container">
-                    <div class="home_in">
-                        <h6>
-                            Огненные талисманы «Хранители»: сила стихий,<br> камней и трав в свечах<br> Екатерины Гриценко
-                        </h6>
-                        <p>
-                            Сделанные вручную, они не просто так называются Хранителями. Эти свечи – огненные талисманы, способные защищать своего владельца, его дом, семью и детей, умеющие исполнять желания, дающие силу, интуицию и любовь.
-                        </p>
-                    </div>
+    <!-- main -->
+    <main>
+      <!-- home -->
+      <section class="home">
+        <img src="./images/home_media.png" alt="">
+        <div class="container">
+          <div class="home_in">
+            <h6>
+              Огненные талисманы «Хранители»: сила стихий,<br> камней и трав в свечах<br> Екатерины Гриценко
+            </h6>
+            <p>
+              Сделанные вручную, они не просто так называются Хранителями. Эти свечи – огненные талисманы, способные
+              защищать своего владельца, его дом, семью и детей, умеющие исполнять желания, дающие силу, интуицию и
+              любовь.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- home -->
+
+      <!-- tabs -->
+      <section class="tabs">
+        <div class="container">
+          <div class="tabs_head">
+            <h6>
+              Узнайте больше о свечах-Хранителях
+            </h6>
+            <div class="tabs_btns">
+              <button class="active" data-target="tab1">
+                Свечи исполнения желания
+              </button>
+              <button data-target="tab2">
+                Хранитель
+              </button>
+              <button data-target="tab3">
+                Ангел-Хранитель
+              </button>
+              <button data-target="tab4">
+                Хранитель семьи
+              </button>
+              <button data-target="tab5">
+                Хранитель детей
+              </button>
+            </div>
+          </div>
+          <div class="tab-content active" id="tab1">
+            <div class="tabs-boxes">
+              <div class="tabs-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
                 </div>
-            </section>
-            <!-- home -->
-
-            <!-- tabs -->
-            <section class="tabs">
-                <div class="container">
-                    <div class="tabs_head">
-                        <h6>
-                            Узнайте больше о свечах-Хранителях
-                        </h6>
-                        <div class="tabs_btns">
-                            <button class="active">
-                                Свечи исполнения желания
-                            </button>
-                            <button>
-                                Хранитель
-                            </button>
-                            <button>
-                                Ангел-Хранитель
-                            </button>
-                            <button>
-                                Хранитель семьи
-                            </button>
-                            <button>
-                                Хранитель детей
-                            </button>
-                        </div>
-                    </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="content-box">
+                <p class="desc">
+                  <b>Свечи исполнения желания –</b> сильный инструмент достижения целей. Есть ли у человека есть простое
+                  желание обладать чем-то или мечта, которая меняет его судьбу, эти свечи способны помочь получить их
+                  исполнение.
+                </p>
+                <div class="accordion">
+                  <div class="accordion-header">
+                    <h3>Состав</h3>
+                    <img class="accordion-arrow" src="images/up-arrow.svg" alt="">
+                  </div>
+                  <div class="accordion-content">
+                    <h3 class="accordion-content__title">Цитрин, лазурит, аметист, горный хрусталь, морская соль, шафран
+                    </h3>
+                    <ul>
+                      <li>Цитрин даёт энергию, необходимую для исполнения желания и мечты.</li>
+                      <li>Лазурит ведёт человека путём исполнения желаний.</li>
+                      <li>Аметист включает интуицию и ясновидение.</li>
+                      <li>Горный хрусталь даёт помощь Ангела- хранителя. </li>
+                      <li>Соль морская не даёт исполняться мечтам и желаниям, приносящим вред людям и миру.</li>
+                      <li>Шафран поворачивает судьбу к счастью.</li>
+                      <li>Деревянный фитиль, горя, издаёт треск, похожий на треск поленьев в костре.</li>
+                    </ul>
+                  </div>
                 </div>
-            </section>
-            <!-- tabs -->
-
-            <!-- guardians -->
-            <section class="guardians">
-                <div class="container">
-                    <div class="guardians_left">
-                        <h6>
-                            Как ухаживать за Хранителями
-                        </h6>
-                        <p>
-                            Хранители – необычные свечи. Это ваши огненные талисманы. Обязательно прочтите, как за ними ухаживать, кто и зачем должен обрезать фитиль и что делать с догоревшей свечой.
-                        </p>
-                        <img src="./images/guardians_media.png" alt="">
-                        <ul>
-                            <li>
-                                <span>
-                                    Обрезка фитиля: кто обрежет фитиль – тот хозяин
-                                </span>
-                                <a href="#">
-                                    Подробнее
-                                </a>
-                            </li>
-                            <li>
-                                <span>
-                                    Горение
-                                </span>
-                                <a href="#">
-                                    Подробнее
-                                </a>
-                            </li>
-                            <li>
-                                <span>
-                                    Камни
-                                </span>
-                                <a href="#">
-                                    Подробнее
-                                </a>
-                            </li>
-                            <li>
-                                <span>
-                                    Травы
-                                </span>
-                                <a href="#">
-                                    Подробнее
-                                </a>
-                            </li>
-                            <li>
-                                <span>
-                                    Воск
-                                </span>
-                                <a href="#">
-                                    Подробнее
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="guardians_right">
-                        <img src="./images/guardians_img.png" alt="">
-                    </div>
+                <div class="btns">
+                  <a class="next-btn" href="#!">
+                    <span>Приобрести на сайте</span>
+                    <img src="images/next-arrow.svg" alt="">
+                  </a>
+                  <a class="next-btn" href="#!">
+                    <span>Приобрести на Ozon</span>
+                    <img src="images/next-arrow.svg" alt="">
+                  </a>
                 </div>
-            </section>
-            <!-- guardians -->
-        </main>
-        <!-- main -->
-    </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab2">
+            <div class="tabs-boxes">
+              <div class="tabs-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-2.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="content-box">
+                <p class="desc">
+                  <b>Хранитель</b> – свеча, которая защищает человека и его дом от чужих негативных эмоций. Когда
+                  человек работает или живёт с людьми, которые излучают страх, раздражение, злость, горе, скуку, то
+                  очень трудно не заразиться от них. Хранитель - особая свеча, не дающая чужой боли и чужому злу
+                  укореняться в доме или теле человека.
+                </p>
+                <div class="accordion">
+                  <div class="accordion-header">
+                    <h3>Состав</h3>
+                    <img class="accordion-arrow" src="images/up-arrow.svg" alt="">
+                  </div>
+                  <div class="accordion-content">
+                    <h3 class="accordion-content__title">Натуральный карельский шунгит, морская соль, белая полынь
+                    </h3>
+                    <ul>
+                      <li>Чёрные камни (шунгит) впитывают в себя боль и негативные эмоции. </li>
+                      <li>Соль и полынь сжигают зло. </li>
+                      <li>Деревянный фитиль, горя, издаёт треск, похожий на треск поленьев в костре.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="btns">
+                  <a class="next-btn" href="#!">
+                    <span>Приобрести на сайте</span>
+                    <img src="images/next-arrow.svg" alt="">
+                  </a>
+                  <a class="next-btn" href="#!">
+                    <span>Приобрести на Ozon</span>
+                    <img src="images/next-arrow.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab3">
+            <div class="tabs-boxes">
+              <div class="tabs-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-2.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="content-box">
+                <p class="desc">
+                  <b>Хранитель</b> – свеча, которая защищает человека и его дом от чужих негативных эмоций. Когда
+                  человек работает или живёт с людьми, которые излучают страх, раздражение, злость, горе, скуку, то
+                  очень трудно не заразиться от них. Хранитель - особая свеча, не дающая чужой боли и чужому злу
+                  укореняться в доме или теле человека.
+                </p>
+                <div class="accordion">
+                  <div class="accordion-header">
+                    <h3>Состав</h3>
+                    <img class="accordion-arrow" src="images/up-arrow.svg" alt="">
+                  </div>
+                  <div class="accordion-content">
+                    <h3 class="accordion-content__title">Цитрин, лазурит, аметист, горный хрусталь, морская соль, шафран
+                    </h3>
+                    <ul>
+                      <li>Цитрин даёт энергию, необходимую для исполнения желания и мечты.</li>
+                      <li>Лазурит ведёт человека путём исполнения желаний.</li>
+                      <li>Аметист включает интуицию и ясновидение.</li>
+                      <li>Горный хрусталь даёт помощь Ангела- хранителя. </li>
+                      <li>Соль морская не даёт исполняться мечтам и желаниям, приносящим вред людям и миру.</li>
+                      <li>Шафран поворачивает судьбу к счастью.</li>
+                      <li>Деревянный фитиль, горя, издаёт треск, похожий на треск поленьев в костре.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="btns">
+                  <a class="next-btn" href="#!">
+                    <span>Приобрести на сайте</span>
+                    <img src="images/next-arrow.svg" alt="">
+                  </a>
+                  <a class="next-btn" href="#!">
+                    <span>Приобрести на Ozon</span>
+                    <img src="images/next-arrow.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab4">
+            <div class="tabs-boxes">
+              <div class="tabs-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-2.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="content-box">
+                <p class="desc">
+                  <b>Хранитель</b> – свеча, которая защищает человека и его дом от чужих негативных эмоций. Когда
+                  человек работает или живёт с людьми, которые излучают страх, раздражение, злость, горе, скуку, то
+                  очень трудно не заразиться от них. Хранитель - особая свеча, не дающая чужой боли и чужому злу
+                  укореняться в доме или теле человека.
+                </p>
+                <div class="accordion">
+                  <div class="accordion-header">
+                    <h3>Состав</h3>
+                    <img class="accordion-arrow" src="images/up-arrow.svg" alt="">
+                  </div>
+                  <div class="accordion-content">
+                    <h3 class="accordion-content__title">Цитрин, лазурит, аметист, горный хрусталь, морская соль, шафран
+                    </h3>
+                    <ul>
+                      <li>Цитрин даёт энергию, необходимую для исполнения желания и мечты.</li>
+                      <li>Лазурит ведёт человека путём исполнения желаний.</li>
+                      <li>Аметист включает интуицию и ясновидение.</li>
+                      <li>Горный хрусталь даёт помощь Ангела- хранителя. </li>
+                      <li>Соль морская не даёт исполняться мечтам и желаниям, приносящим вред людям и миру.</li>
+                      <li>Шафран поворачивает судьбу к счастью.</li>
+                      <li>Деревянный фитиль, горя, издаёт треск, похожий на треск поленьев в костре.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="btns">
+                  <a class="next-btn" href="#!">
+                    <span>Приобрести на сайте</span>
+                    <img src="images/next-arrow.svg" alt="">
+                  </a>
+                  <a class="next-btn" href="#!">
+                    <span>Приобрести на Ozon</span>
+                    <img src="images/next-arrow.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab5">
+            <div class="tabs-boxes">
+              <div class="tabs-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-2.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="images/slider-img-1.png" alt="slider img">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="content-box">
+                <p class="desc">
+                  <b>Хранитель</b> – свеча, которая защищает человека и его дом от чужих негативных эмоций. Когда
+                  человек работает или живёт с людьми, которые излучают страх, раздражение, злость, горе, скуку, то
+                  очень трудно не заразиться от них. Хранитель - особая свеча, не дающая чужой боли и чужому злу
+                  укореняться в доме или теле человека.
+                </p>
+                <div class="accordion">
+                  <div class="accordion-header">
+                    <h3>Состав</h3>
+                    <img class="accordion-arrow" src="images/up-arrow.svg" alt="">
+                  </div>
+                  <div class="accordion-content">
+                    <h3 class="accordion-content__title">Цитрин, лазурит, аметист, горный хрусталь, морская соль, шафран
+                    </h3>
+                    <ul>
+                      <li>Цитрин даёт энергию, необходимую для исполнения желания и мечты.</li>
+                      <li>Лазурит ведёт человека путём исполнения желаний.</li>
+                      <li>Аметист включает интуицию и ясновидение.</li>
+                      <li>Горный хрусталь даёт помощь Ангела- хранителя. </li>
+                      <li>Соль морская не даёт исполняться мечтам и желаниям, приносящим вред людям и миру.</li>
+                      <li>Шафран поворачивает судьбу к счастью.</li>
+                      <li>Деревянный фитиль, горя, издаёт треск, похожий на треск поленьев в костре.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="btns">
+                  <a class="next-btn" href="#!">
+                    <span>Приобрести на сайте</span>
+                    <img src="images/next-arrow.svg" alt="">
+                  </a>
+                  <a class="next-btn" href="#!">
+                    <span>Приобрести на Ozon</span>
+                    <img src="images/next-arrow.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- tabs -->
 
-    <!-- Swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Swiper js -->
-    <!-- js file -->
-    <script src="./js/main.js"></script>
-    <!-- js file -->
+      <!-- guardians -->
+      <section class="guardians">
+        <div class="container">
+          <div class="guardians_left">
+            <h6>
+              Как ухаживать за Хранителями
+            </h6>
+            <p>
+              Хранители – необычные свечи. Это ваши огненные талисманы. Обязательно прочтите, как за ними ухаживать, кто
+              и зачем должен обрезать фитиль и что делать с догоревшей свечой.
+            </p>
+            <img src="./images/guardians_media.png" alt="">
+            <ul>
+              <li>
+                <span>
+                  Обрезка фитиля: кто обрежет фитиль – тот хозяин
+                </span>
+                <a href="#">
+                  Подробнее
+                </a>
+              </li>
+              <li>
+                <span>
+                  Горение
+                </span>
+                <a href="#">
+                  Подробнее
+                </a>
+              </li>
+              <li>
+                <span>
+                  Камни
+                </span>
+                <a href="#">
+                  Подробнее
+                </a>
+              </li>
+              <li>
+                <span>
+                  Травы
+                </span>
+                <a href="#">
+                  Подробнее
+                </a>
+              </li>
+              <li>
+                <span>
+                  Воск
+                </span>
+                <a href="#">
+                  Подробнее
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="guardians_right">
+            <img src="./images/guardians_img.png" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- guardians -->
+
+      <!-- banner -->
+      <section class="banner">
+        <h2 class="banner-title"><span>Пусть эти свечи</span> <span>повернут вашу жизнь</span> <span>к счастью!</span>
+        </h2>
+        <h3 class="banner-sub__title">С любовью, <br>
+          Екатерина Гриценко <br>
+          Мистик, Нумеролог, Волшебница</h3>
+      </section>
+      <!-- banner -->
+    </main>
+    <!-- main -->
+  </div>
+
+  <!-- Swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Swiper js -->
+  <!-- js file -->
+  <script src="./js/main.js"></script>
+  <!-- js file -->
 </body>
+
 </html>

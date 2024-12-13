@@ -33,7 +33,8 @@ img {
   max-width: 100%;
 }
 
-span, label {
+span,
+label {
   display: inline-block;
 }
 
@@ -42,12 +43,13 @@ html {
 }
 
 body {
-  background-color: #F3EBE1;
+  background-color: #f3ebe1;
   font-family: "NT Somic", sans-serif;
   font-style: normal;
 }
 
-input, textarea {
+input,
+textarea {
   outline: none;
   border: 0;
   background: transparent;
@@ -104,44 +106,172 @@ address {
   font-size: 34px;
   font-weight: 400;
   line-height: 36px;
-  color: #F3EBE1;
+  color: #f3ebe1;
   margin-bottom: 28px;
 }
 .home p {
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
-  color: #F3EBE1;
+  color: #f3ebe1;
 }
 
 .tabs {
   padding: 120px 0 60px;
 }
+.tabs .tab-content {
+  display: none;
+  animation: fade 0.2s linear;
+}
+.tabs .tab-content.active {
+  display: block;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .tabs_head h6 {
   font-size: 34px;
   font-weight: 400;
   line-height: 36px;
-  color: #4C240A;
+  color: #4c240a;
   margin-bottom: 28px;
 }
 .tabs_head button {
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
-  color: #4C240A;
+  color: #4c240a;
   padding: 13px 30px;
   border-radius: 30px;
-  border: 1px solid #4C240A;
+  border: 1px solid #4c240a;
 }
 .tabs_head button.active {
-  background-color: #4C240A;
-  color: #F3EBE1;
+  background-color: #4c240a;
+  color: #f3ebe1;
+}
+.tabs .swiper-pagination-bullet {
+  background: transparent;
+  opacity: 1;
+  border: 1px solid #f3ebe1;
+  width: 9px;
+  height: 9px;
+}
+.tabs .swiper-pagination {
+  top: unset;
+  bottom: 40px;
+}
+.tabs .swiper-pagination-bullet-active {
+  background: #f3ebe1;
 }
 .tabs_btns {
   display: flex;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+}
+.tabs .tabs-boxes {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+}
+.tabs .tabs-boxes > div {
+  width: 100%;
+}
+.tabs .tabs-boxes .tabs-slider .swiper-slide {
+  height: 660px;
+}
+.tabs .tabs-boxes .tabs-slider .swiper-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tabs .content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.tabs .content-box .desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #4c240a;
+}
+.tabs .accordion-header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d9c8bb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tabs .accordion-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #4c240a;
+}
+.tabs .accordion .accordion-arrow {
+  display: none;
+  transition: all 0.2s linear;
+}
+.tabs .accordion-content {
+  padding-top: 20px;
+}
+.tabs .accordion-content__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4c240a;
+  margin-bottom: 16px;
+}
+.tabs .accordion ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.tabs .accordion li {
+  position: relative;
+  padding-left: 28px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #4c240a;
+}
+.tabs .accordion li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #d9c8bb;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+.tabs .btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tabs .btns .next-btn {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7f5539;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #7f5539;
+  padding: 15px 20px;
+  width: 100%;
+  border-radius: 30px;
 }
 
 .guardians {
@@ -174,20 +304,20 @@ address {
   font-size: 34px;
   font-weight: 400;
   line-height: 36px;
-  color: #4C240A;
+  color: #4c240a;
   margin-bottom: 28px;
 }
 .guardians p {
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
-  color: #4C240A;
+  color: #4c240a;
 }
 .guardians ul {
   margin-top: 40px;
 }
 .guardians ul li {
-  border-bottom: 1px solid #D9C8BB;
+  border-bottom: 1px solid #d9c8bb;
   padding: 30px 0;
   display: flex;
   align-items: center;
@@ -195,13 +325,13 @@ address {
   justify-content: space-between;
 }
 .guardians ul li:first-child {
-  border-top: 1px solid #D9C8BB;
+  border-top: 1px solid #d9c8bb;
 }
 .guardians ul span {
   font-size: 24px;
   font-weight: 600;
   line-height: 26px;
-  color: #4C240A;
+  color: #4c240a;
 }
 .guardians ul a {
   font-size: 18px;
@@ -212,7 +342,40 @@ address {
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
-  color: #9F8775;
+  color: #9f8775;
+}
+
+.banner {
+  background: url(../images/banner.png) no-repeat;
+  background-size: cover;
+  height: 681px;
+  position: relative;
+}
+.banner-title {
+  padding: 120px 0 0 120px;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #f3ebe1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.banner-title span {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 17px;
+  background: #4c240a;
+}
+.banner-sub__title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+  color: #f3ebe1;
+  width: 485px;
+  margin-left: 195px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -229,7 +392,7 @@ address {
     max-width: 100%;
   }
   .guardians_left h6 {
-    color: #4C240A;
+    color: #4c240a;
     font-size: 24px;
     font-weight: 600;
     line-height: 26px;
@@ -257,6 +420,18 @@ address {
     line-height: 16.8px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .tabs .tabs-boxes {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .tabs .tabs-boxes .tabs-slider {
+    margin-right: -10px;
+  }
+  .tabs .swiper-pagination {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .home {
     padding: 0;
@@ -273,13 +448,13 @@ address {
     max-width: 100%;
   }
   .home h6 {
-    color: #4C240A;
+    color: #4c240a;
     font-size: 24px;
     font-weight: 600;
     line-height: 26px;
   }
   .home p {
-    color: #4C240A;
+    color: #4c240a;
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
@@ -287,10 +462,10 @@ address {
   .home_in {
     max-width: 100%;
     padding: 28px 20px 52px 20px;
-    background: #F3EBE1;
+    background: #f3ebe1;
   }
   .tabs_head h6 {
-    color: #4C240A;
+    color: #4c240a;
     font-size: 24px;
     font-weight: 600;
     line-height: 26px;
@@ -299,10 +474,62 @@ address {
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    padding: 15px 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: center;
+    height: 40px;
   }
   .tabs_btns {
     gap: 8px;
+  }
+  .banner-title {
+    padding: 52px 0 0 20px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .banner-title span {
+    padding: 4px 5px;
+  }
+  .banner-sub__title {
+    margin: 12px 0 0 25px;
+    font-size: 10px;
+    width: 182px;
+    line-height: 12px;
+  }
+  .banner {
+    height: 260px;
+    background-position: center;
+  }
+  .tabs .tabs-boxes .tabs-slider .swiper-slide {
+    height: 320px;
+  }
+  .tabs .tabs-boxes {
+    margin-top: 28px;
+  }
+  .tabs .accordion-header h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .tabs .accordion .accordion-arrow {
+    display: block;
+    transform: rotate(90deg);
+  }
+  .tabs .accordion-header.active .accordion-arrow {
+    transform: rotate(0);
+  }
+  .tabs .accordion-content {
+    display: none;
+  }
+  .tabs .accordion-content.show {
+    display: block;
+  }
+  .tabs {
+    padding: 0;
+  }
+  .tabs .btns .next-btn {
+    padding: 11px 20px;
   }
 }
 @media only screen and (max-width: 576px) {
